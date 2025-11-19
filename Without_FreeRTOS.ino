@@ -41,7 +41,6 @@ void loop() {
         currentLux = calculateLuxFromADC(adc);
     }
 
-    // --- 2) Обновление LCD каждые 300 ms ---
     if (millis() - lastLCDUpdate >= 300) {
         lastLCDUpdate = millis();
 
